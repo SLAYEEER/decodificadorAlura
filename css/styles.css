@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #D8DFE8;
+}
+
+.cabecalho {
+    display: inline-block;
+    width: 97%;
+    margin-top: 28px;
+}
+
+.conteudo__ {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    height: 87vh;
+}
+
+.codificador_de_Texto{
+    margin-left: 80px;
+    width: 70%;
+    text-align: left;
+    gap: 80px;
+    flex-direction: column;
+}
+
+.codificador_de_Texto p i{
+    color: #495057;
+}
+
+.codificador_de_Texto input{
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 100%;
+    padding-bottom: 600px;
+    background-color: #D8DFE8;
+    word-break: break-all;
+}
+.codificador_de_Texto input:focus{
+    outline: none;
+}
+.codificador_de_Texto input::placeholder{
+    color: #0A3871;
+    font-family: 'Inter', sans-serif;
+}
+.codificador_de_Texto .botoes{
+    margin: 0;
+}
+.codificador_de_Texto .botoes button{
+    padding: 20px;
+    width: 255px;
+    margin-right: 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.codificador_de_Texto .botoes button:nth-child(1){
+    background-color: #0A3871;
+    color: #fff;
+}
+.codificador_de_Texto .botoes button:nth-child(2){
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    
+}
+
+.codificador_de_Texto .botoes button:nth-child(1):hover{
+    filter: opacity(75%);
+    transition: .2s ease-in-out;
+    box-shadow: #0000006b 2px 2px 10px 1px;
+    scale: 1.05;
+}
+
+.codificador_de_Texto .botoes button:nth-child(2):hover{
+    background-color: #0e3b71;
+    transition: .2s ease-in-out;
+    color: #fff;
+    box-shadow: #0000006b 2px 2px 10px 1px;
+    scale: 1.05;
+}
+
+.texto__Codificado {
+    width: 30%;
+    border-radius: 10px;
+    height: 800px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: #0000006b 2px 2px 10px 1px;
+}
+.texto__Codificado .resultado{
+    resize: none;
+    font-size: 20px;
+    width: 90%;
+    height: 700px;
+    border: none;
+    margin: 10px auto;
+}
+.texto__Codificado .resultado:focus{
+    outline: none;
+}
+
+#copiar {
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background-color: #fff;
+    font-size: 16px;
+    transition: .2s ease-in-out;
+}
+#copiar:hover {
+    background-color: #0e3b71;
+    transition: .2s ease-in-out;
+    color: #fff;
+    box-shadow: #0000006b 2px 2px 10px 1px;
+    scale: 1.03;
+}
+.texto__Codificado h3, .texto__Codificado p{
+    color: #343A40;
+}
+
+.semTexto {
+    display: block;
+    padding-top: 30%;
+}
+
+.rodape {
+    text-align: center;
+    background-color: #0A3871;
+    color: #fff;
+    padding: 13px;
+    line-height: 4px;
+    margin-top: 30px;
+    bottom: 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1100px){
+    .cabecalho{
+        margin-bottom: 50px;
+    }
+    
+    .conteudo__{
+        display: grid;
+        height: 100%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .codificador_de_Texto, .texto__Codificado{
+        margin-left: 50px;
+    }
+    
+    .codificador_de_Texto{
+        width: 90vw;
+    }
+
+    .texto__Codificado{
+        width: 90vw;
+        height: auto;
+        margin-bottom: 50px
+    }
+    .texto__Codificado .resultado{
+        width: 80vw;
+        height: auto;
+    }
+
+    #copiar{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .texto__Codificado .semTexto img{
+        display: none;
+    }
+
+    .texto__Codificado .semTexto {
+        padding: 60px;
+    }
+
+    .codificador_de_Texto .botoes{
+        text-align: center;
+    }
+
+    .codificador_de_Texto .botoes button{
+        width: 40%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .codificador_de_Texto .botoes button{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .codificador_de_Texto, .texto__Codificado{
+        margin: 0 30px;
+    }
+    .texto__Codificado {
+        margin-bottom: 50px;
+    }
+}

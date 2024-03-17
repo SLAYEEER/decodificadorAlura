@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>
+        <link rel="shortcut icon" href="img/19290-Logo-200x200.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/36df9cafe1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img src="img/Frame 6.png" alt="Logo da Alura" class="logo__alura">
+        </header>
+        <div class="conteudo__">
+            <section class="codificador_de_Texto">
+                <input class="texto" type="text" placeholder="Digite seu texto" >
+                <p><i class="fa-solid fa-circle-exclamation"></i> apenas letras minusculas e sem acento</p>
+                <div class="botoes">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </section>
+            <section class="texto__Codificado">
+                <textarea id="esconderAlerta" class="resultado" cols="30" rows="10" style="display: none;" readonly></textarea>
+                <div id="alertaTexto" class="semTexto">
+                    <img src="img/High quality products 1 1.svg" alt="">
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <button id="copiar" style="display: none;">Copiar</button>
+            </section>
+        </div>
+        <footer class="rodape">
+            <p>Alura Challenge - Oracle Next Education</p>
+            <p>Desenvolvido Por Vinicius Dias.</p>
+        </footer>
+        <script src="/PROJETOS/projeto_DecodificadorAlura/main.js"></script>
+    </body>
+</html>
